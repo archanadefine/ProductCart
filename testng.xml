@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/navya/workspace/ProductCart">
+        <classes><class name="com.ola.arc1.BrandList"><methods>
+            <include name="BrandListStatusCode"/><include name="BrandListnotEmpty"/>
+            <include name="getBrandListSize"/>
+        </methods>
+        </class>
+            <class name="com.ola.arc1.CreateProductList">
+                <methods><include name="getStatusCode"/>
+                    <include name="getmessage"/>
+                </methods></class>
+            <class name="com.ola.arc1.ProductList">
+                <methods><include name="getStatusCode"/>
+                    <include name="getPriceOfProductName"/>
+                    <include name="brandList"/>
+                    <include name="categoryList"/>
+                    <include name="usrTypeList"/>
+                    <include name="priceForID"/>
+                    <include name="getBrandPriceforUserType"/>
+                    <include name="listNotEmpty"/>
+                    <include name="listSizeMoreThenTwo"/>
+                    <include name="getLastIdDetails"/>
+                    <include name="attributeDataType"/>
+                </methods></class>
+        </classes>
+    </test>
+</suite>
